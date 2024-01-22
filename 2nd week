@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internship-Webpage</title>
+        <style>
+            .navbar{
+                border: rgb(237, 232, 232) solid 1px;
+            }
+            .search_button{
+                position:absolute;
+                top:10%;
+                right:15%;
+            }
+            .web_d{
+                position:absolute;
+                top:50%;
+                left:40%;
+                border:rgb(207, 203, 203) solid 0.5px;
+                width:370px;
+                height:270px;
+            }
+            .view_button{
+                background-color:lightsalmon;
+                color:rgb(255, 255, 255);
+                text-align:center;
+                padding:10px 10px;
+                margin:20px;
+                border-radius: 5px;
+            }
+            .list{
+                font-family:Arial, Helvetica, sans-serif;
+                color:rgb(4, 2, 16);
+                font-size: small;
+            }
+            .app_d{
+                position:absolute;
+                top:100%;
+                left:39.5%;
+                border:rgb(207, 203, 203) solid 0.5px;
+                width:29%;
+                height:270px;
+            }
+            .python_p{
+                position:absolute;
+                top:150%;
+                left:39.5%;
+                border:rgb(207, 203, 203) solid 0.5px;
+                width:29%;
+                height:270px;
+            }
+            .java_p{
+                position:absolute;
+                top:200%;
+                left:39.5%;
+                border:rgb(207, 203, 203) solid 0.5px;
+                width:29%;
+                height:270px;
+            }
+            .canva_d{
+                position:absolute;
+                top:250%;
+                left:39.5%;
+                border:rgb(207, 203, 203) solid 0.5px;
+                width:29%;
+                height:270px;
+            }
+            .msme{
+                position:absolute;
+                top:300%;
+                left:49%;
+            }
+            .msme_img{
+                border-radius: 5px;
+            }
+            .ncs{
+                position:absolute;
+                top:335%;
+                left:45%;
+            }
+            .ncs_img{
+                border-radius:5px;
+            }
+            .below-1{
+                font-family:Arial, Helvetica, sans-serif;
+                position:absolute;
+                top:360%;
+                left:20%;
+            }
+            .below-2{
+                font-family:Arial, Helvetica, sans-serif;
+                position: absolute;
+                TOP:380%;
+                left:45%;
+            }
+            .view_button {
+                align-items: center;
+                border: none;
+                padding: 27px 10px;
+                background-color: blue !important;
+                display: flex;
+                gap: 10px;
+                border-radius: 25px;
+                align-items: center;
+                padding: 5px 14px;
+                color: white;
+              }            
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <center><img src="/New folder/vault.jpg" alt="This can't be loaded"></center>
+        </div>
+        <h1 style="font-family:Arial, Helvetica, sans-serif;color:rgba(236, 103, 103, 0.824)"><center>Internships</center></h1>
+       <div class="web_d">
+            <center><h4 style="font-family:Arial, Helvetica, sans-serif;color:rgb(145, 71, 71)">Web Development Internships program</h4></center>
+          <ul type="." class="list">
+                <li>Duration:1 month/2 months</li><br>
+                <li>Location: Virtual</li><br>
+                <li>stiphend:-</li><br>
+                <li>start date: 05/11/2023</li><br>
+                <center><button class="view_button" type="button" onclick="alert('already viewed!')"><b>View Details</b></button></center>
+            </ul>
+        </div>
+        <div class="app_d">
+            <center><h4 style="font-family:Arial, Helvetica, sans-serif;color:rgb(145, 66, 66)">App Development Internship Program</h4></center>
+          <ul type="." class="list">
+                <li>Duration:1 month/2 months</li><br>
+                <li>Location: Virtual</li><br>
+                <li>stiphend:-</li><br>
+                <li>start date: 05/11/2023</li><br>        
+                <center><button class="view_button" type="button" onclick="alert('already viewed!')"><b>View Details</b></button></center>
+            </ul>
+        </div>
+        <div class="python_p">
+            <center><h4 style="font-family:Arial, Helvetica, sans-serif;color:rgb(135, 72, 72)">Python Programming Internship Program</h4></center>
+          <ul type="." class="list">
+                <li>Duration:1 month/2 months</li><br>
+                <li>Location: Virtual</li><br>
+                <li>stiphend:-</li><br>
+                <li>start date: 05/11/2023</li><br>
+                <center><button class="view_button" type="button" onclick="alert('already viewed!')"><b>View Details</b></button></center>
+            </ul>
+        </div>
+        <div class="java_p">
+            <center><h4 style="font-family:Arial, Helvetica, sans-serif;color:rgb(141, 70, 70)">Java Programming Internship Program</h4></center>
+          <ul type="." class="list">
+                <li>Duration:1 month/2 months</li><br>
+                <li>Location: Virtual</li><br>
+                <li>stiphend:-</li><br>
+                <li>start date: 05/11/2023</li><br>
+                <center><button class="view_button" type="button" onclick="alert('already viewed!')"><b>View Details</b></button></center>
+            </ul>
+        </div>
+        <div class="canva_d">
+            <center><h4 style="font-family:Arial, Helvetica, sans-serif;color:rgb(142, 73, 73)">Canva Designing Internship Program</h4></center>
+          <ul type="." class="list">
+                <li>Duration:1 month/2 months</li><br>
+                <li>Location: Virtual</li><br>
+                <li>stiphend:-</li><br>
+                <li>start date: 05/11/2023</li><br>
+                <center><button class="view_button" type="button" onclick="alert('already viewed!')"><b>View Details</b></button></center>
+            </ul>
+        </div>
+        <div class="msme">
+            <img class="msme_img" src="/New folder/msme.jpg" alt="can't display" width="40%" height="40%">
+        </div>
+        <div class="ncs">
+            <img class="ncs_img" src="/New folder/ncs.jpg" alt="can't display" width="60%" height="60%">
+        </div>
+        <div class="below-1">
+            <p>About Us</p><br>
+            <p>Policies</p><br>
+        </div>
+        <div class="below-2">
+            <p>Subscribe to our emails</p>
+            <input type="text" placeholder="emails.." name="email">
+        </div>
+    </body>
+</html>
