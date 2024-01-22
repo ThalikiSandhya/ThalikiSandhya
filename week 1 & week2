@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+<title>Sandhya-portfolio</title> 
+</head> 
+ 
+<body> 
+<h1>T Sandhya</h1> 
+<section> 
+<h2>About Me</h2> 
+<p>My name is Thaliki Sandhya I am from Nellore District.Now I am persuing my BTech final year at Audisankara College of Engineering and Technology with the Specialization of Computer Science and Engineering.My hobbies are listening music, sports and games.I am good at programming Languages like C,Java,Python and good at markup Languageslike HTML and CSS. 
+</p> 
+</section> 
+<section> 
+<h3>Skills:</h3> 
+<ol> 
+<li>PYTHON</li> 
+<li>HTML</li> 
+<li>CSS</li> 
+<li>JAVS SCRIPT</li> 
+<li>C</li> 
+</ol> 
+<h3>Interests:</h3> 
+<ol> 
+<li>Listening music</li> 
+<li>cooking</li> 
+<li>Games</li> 
+</ol> 
+<h3>Languages:</h3> 
+<ol> 
+<li>Telugu</li> 
+<li>English</li> 
+<li>Tamil</li> 
+</ol> 
+</section> 
+<section> 
+<h3>Projects:</h3> 
+<h4>1.Academic Connect</h4> 
+<p> 
+Empowering Students and Educators 
+The Fronted is developed using HTML, CSS, JavaScript 
+and Angular JS and for backend connectivity we use 
+FastAPI 
+</p> 
+</section> 
+<section> 
+<h3>Contact information:</h3> 
+<ol> 
+<li><b>Name:</b>T.Sandhya</li> 
+<li><b>E-mail:</b>thalikisandhya2015@gmail.com</li> 
+<li><b>Mobile no:</b>9948340043</li> 
+<li><b>Nationality:</b> Indian</li> 
+<li><b>LinkedIn:</b>https://www.linkedin.com/in/sandhya-thaliki-174881288</li> 
+</ol> 
+</section> 
+</body> 
+ 
+</html>
