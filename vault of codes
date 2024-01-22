@@ -1,0 +1,233 @@
+Exercise: The task is to identify and fix the errors in the code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debugging Exercise</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+margin: 20px;
+}
+h1 {
+color: #007bff;
+}
+p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+.important-text {
+font-weight: bold;
+color: #d9534f;
+}
+</style>
+</head>
+<body>
+<h1>Debugging Exercise</h1>
+<p>This is a paragraph with some <span class="important-text">important text</span>.</p>
+<p>Here's an unordered list:</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<p>And here's an ordered list:</p>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<p>This is a <a href="https://www.example.com">link to example.com</a>.</p>
+<script>
+console.log("Debugging exercise script");
+</script>
+</body>
+</html>
+Explanation:
+There are no errors in the provided code. It contains a simple HTML document with some styling.
+
+Exercise : JavaScript Debugging
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Element</title>
+</head>
+<body>
+<button onclick="toggleElement()">Toggle Element</button>
+<div id="target" style="display: none;">This is the target element.</div>
+<script>
+function toggleElement() {
+var element = document.getElementById("target");
+element.style.display = (element.style.display === "none") ? "block" : "none";
+}
+</script>
+</body>
+</html>
+
+
+Corrected Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Element</title>
+</head>
+<body>
+<button onclick="toggleElement()">Toggle Element</button>
+<div id="target" style="display: none;">This is the target element.</div>
+<script>
+function toggleElement() {
+var element = document.getElementById("target");
+element.style.display = (element.style.display !== "none") ? "none" : "block";
+}
+</script>
+</body>
+</html>
+Explanation:
+The display property of the element is toggled between "none" and "block". When the display property is "none", 
+the element is hidden, and when it's "block", the element is shown with a normal display. This way, clicking the 
+button will correctly toggle the visibility of the element.
+
+
+Exercise : CSS Troubleshooting
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Container</title>
+<style>
+.container {
+margin: auto;
+width: 50%;
+background-color: #f0f0f0;
+padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Centered Container</h1>
+<p>This container should be centered on the page.</p>
+</div>
+</body>
+</html>
+Corrected Codes:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Container</title>
+<style>
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.container {
+width: 50%;
+background-color: #f0f0f0;
+padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Centered Container</h1>
+<p>This container should be centered on the page.</p>
+</div>
+</body>
+</html>
+Explanation:
+To fix this, you can use Flexbox.
+Exercise : Debugging JavaScript Functions
+function calculateSum(arr) {
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+sum += arr[i];
+}
+return sum;
+}
+const numbers = [1, 2, 3, 4, 5];
+const result = calculateSum(numbers);
+console.log(result); 
+Explanation:
+No errors in this it displaying the output properly.
+Exercise 2: Debugging CSS Styling Issues
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styling Debugging Exercise</title>
+<style>
+.container {
+width: 50%;
+margin: 0 auto;
+background-color: #f0f0f0;
+padding: 20px;
+}
+.box {
+width: 100px;
+height: 100px;
+background-color: #007bff;
+color: #ffffff;
+text-align: center;
+line-height: 100px;
+}</style>
+</head>
+<body>
+<div class="container">
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+</div>
+</body>
+</html>
+Corrected Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Styling Debugging Exercise</title>
+ <style>
+ .container {
+ width: 50%;
+ margin: 0 auto;
+ background-color: #f0f0f0;
+ padding: 20px;
+ }
+ .box {
+ width: 100px;
+ height: 100px;
+ background-color: blue;
+ color: #ffffff;
+ text-align: center;
+ line-height: 100px;
+ border: 1px solid #ffffff;
+ margin-bottom: 20px;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <div class="box">Box 1</div>
+ <div class="box">Box 2</div>
+ <div class="box">Box 3</div>
+ </div>
+</body>
+</html>
+Explanation:
+The CSS class for '.box' does not include any 'border' properties. Add this property to give each box a clear visual 
+separation and improve the overall styling.
