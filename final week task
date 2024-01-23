@@ -1,0 +1,185 @@
+final week
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Sandhya-portfolio</title>
+ </head>
+ <body ng-app="portfolioApp" ng-controller="PortfolioController as portfolio">
+ <h1>{{ portfolio.aboutMe.name }}</h1>
+ <section>
+ <h2>About Me</h2>
+ <p>{{ portfolio.aboutMe.education }}</p>
+ <p>{{ portfolio.aboutMe.hobbies }}</p>
+ <p>{{ portfolio.aboutMe.programmingLanguages }}</p>
+ <p>{{ portfolio.aboutMe.markupLanguages }}</p>
+ </section>
+ <section>
+ <h3>Skills:</h3>
+ <ul>
+ <li ng-repeat="skill in portfolio.skills">{{ skill }}</li>
+ </ul>
+ </section>
+ <section>
+ <h3>Interests:</h3>
+ <ul>
+ <li ng-repeat="interest in portfolio.interests">{{ interest }}</li>
+ </ul>
+ </section>
+ <section>
+ <h3>Languages:</h3>
+ <ul>
+ <li ng-repeat="language in portfolio.languages">{{ language }}</li>
+ </ul>
+ </section>
+ <section>
+ <h3>Projects:</h3>
+ <ul>
+ <li ng-repeat="project in portfolio.projects">
+ <h4>{{ project.name }}</h4>
+ <p>{{ project.description }}</p>
+ </li>
+ </ul>
+ </section>
+ <section>
+ <h3>Contact information:</h3>
+ <ul>
+ <li ng-repeat="info in portfolio.contactInformation">
+ <strong>{{ info.label }}:</strong> {{ info.value }}
+ </li>
+ </ul>
+ </section>
+ <p>Copyright &copy; {{ portfolio.currentYear }}</p>
+ </body>
+</html>
+angular.module('portfolioApp', [])
+ .controller('PortfolioController', function() {
+ this.aboutMe = {
+ name: 'T Sandhya',
+ education: 'BTech final year at Audisankara College of Engineering and Technology with the Specialization of Com hobbies: 'listening music, sports and games',
+ programmingLanguages: 'C, Java, Python',
+ markupLanguages: 'HTML, CSS'
+ };
+ this.skills = ['PYTHON', 'HTML', 'CSS', 'JAVS SCRIPT', 'C'];
+ this.interests = ['Listening music', 'cooking', 'Games'];
+ this.languages = ['Telugu', 'English', 'Tamil'];
+ this.projects = [{
+ name: 'Academic Connect',
+ description: 'Empowering Students and Educators. The Fronted is developed using HTML, CSS, JavaScript and Ang }];
+ this.contactInformation = [{
+ label: 'Name',
+ value: 'T.Sandhya'
+ }, {
+ label: 'E-mail',
+ value: 'thalikisandhya2015@gmail.com'
+ }, {
+ label: 'Mobile no',
+ value: '9948340043'
+ }, {
+ label: 'Nationality',
+ value: 'Indian'
+ }, {
+ label: 'LinkedIn',
+ value: '<https://www.linkedin.com/in/sandhya-thaliki-174881288>'
+ }];
+ this.currentYear = new Date().getFullYear();
+ });
+
+
+
+ 
+Second Task
+!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>User Registration Form</title>
+</head>
+<body>
+ <form class="Form">
+ <label for="first-name">Full Name (First Name, Last Name)</label>
+ <input type="text" id="first-name" placeholder="First Name">
+ <input type="text" id="last-name" placeholder="Last Name">
+
+ <label for="email">Email Address</label>
+ <input type="email" id="email" placeholder="example@example.com">
+
+ <label for="password">Password</label>
+ <input type="password" id="password" placeholder="Enter your password">
+
+ <label for="confirm-password">Confirm Password</label>
+ <input type="password" id="confirm-password" placeholder="Re-enter your password">
+
+ <label for="dob">Date of Birth</label>
+ <input type="date" id="dob">
+
+ <label for="gender">Gender</label>
+ <select id="gender">
+ <option value="male">Male</option>
+ <option value="female">Female</option>
+ <option value="other">Other</option>
+ </select>
+
+ <label for="profile-picture">Profile Picture</label>
+ <input type="file" id="profile-picture">
+
+ <label for="terms">Terms and Conditions</label>
+ <input type="checkbox" id="terms">
+ <label for="terms">I agree to the Terms and Conditions</label>
+
+ <div class="password-strength-indicator">
+ <div class="password-strength-bar"></div>
+ <div class="password-strength-label">Password Strength: Weak</div>
+ </div>
+
+ <button type="submit">Register</button>
+ </form>
+</body>
+</html>
+/css
+body {
+ font-family: Arial, sans-serif;
+}
+.Form {
+ width: 300px;
+ margin: 0 auto;
+}
+.Form label {
+ display: block;
+ margin-top: 10px;
+}
+.Form input,
+.Form select {
+ width: 100%;
+ padding: 10px;
+ margin-top: 5px;
+}
+.Form input[type="file"] {
+ margin-top: 10px;
+}
+.Form button {
+ width: 100%;
+ padding: 10px;
+ margin-top: 15px;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+.Form button:hover {
+ background-color: #45a049;
+}
+.password-strength-indicator {
+ width: 100%;
+ margin-top: 10px;
+}
+.password-strength-bar {
+ height: 5px;
+ background-color: #ccc;
+ position: relative;
+}
+.password-strength-label {
+ margin-top: 5px;
+ text-align: center;
+}
